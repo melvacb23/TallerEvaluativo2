@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Fichas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- Sección Login -->
+  <section id="loginSection">
+    <div class="card">
+      <h2>Iniciar Sesión</h2>
+      <form>
+        <input type="text" id="email" placeholder="Nombre de Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button id="btnLogin">Iniciar Sesión</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Sección Principal -->
+  <section id="appSection" class="hidden">
+    <div class="card">
+      <h2>Aprendices SENA C.T.P.I</h2>
+      <div style="margin-bottom: 10px;">
+        <span>Usuario: <span id="userName"></span></span>
+      </div>
+      <div style="margin-bottom: 20px;">
+        <button id="btnLogout" style="float: right;">Salir</button>
+      </div>
+      <div style="margin-bottom: 20px;">
+        <label for="fichaSelect">Seleccione Código de Ficha:</label>
+        <select id="fichaSelect"></select>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Tipo Documento</th>
+            <th>Número Documento</th>
+            <th>Nombre</th>
+            <th>Primer Apellido</th>
+            <th>Segundo Apellido</th>
+            <th>Estado del Aprendiz</th>
+          </tr>
+        </thead>
+        <tbody id="aprendicesTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
