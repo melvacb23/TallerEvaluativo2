@@ -1,60 +1,94 @@
+📌 estilos.css
+/* Fondo general */
 body {
-  font-family: Arial, sans-serif;
   background: #f4f6f9;
-  margin: 0;
-  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Cards */
 .card {
-  background: white;
-  padding: 20px;
-  margin: 10px auto;
-  border-radius: 8px;
-  max-width: 600px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-h2 {
-  text-align: center;
-  color: #333;
-}
-
-input, select, button {
-  display: block;
-  width: 90%;
-  margin: 10px auto;
-  padding: 10px;
-  font-size: 16px;
-}
-
-button {
-  background: #007bff;
-  color: white;
   border: none;
-  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-button:hover {
-  background: #0056b3;
+.card-title {
+  font-weight: 600;
+  color: #2c3e50;
 }
 
-.hidden {
-  display: none;
+/* Botones */
+.btn {
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
 }
 
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
+/* Tabla */
+.table {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-th {
-  background: #007bff;
+.table thead {
+  background: #198754; /* Verde bootstrap */
   color: white;
+}
+
+.table tbody tr:hover {
+  background: #f1f8f4;
+}
+
+/* Estados de aprendices */
+.estado {
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.estado-formacion {
+  background: #d1f7d6;
+  color: #14532d;
+}
+
+.estado-retiro {
+  background: #ffe0e0;
+  color: #8b0000;
+}
+
+.estado-cancelado {
+  background: #fdf1d6;
+  color: #8a4b00;
+}
+
+/* Centramos el login */
+#login .card {
+  margin-top: 50px;
+}
+
+#login h5 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* App separado del login */
+#app {
+  margin-top: 40px;
+}
+
+/* Navbar user text */
+#navbarUser {
+  font-weight: 600;
+  color: #2c3e50;
 }
